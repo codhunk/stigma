@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:apnaparcelfinal/navigation_menu.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -8,10 +7,9 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:stigma/common/Screens/splash_screen.dart';
 import 'package:stigma/features/authentication/screens/login/login_screen.dart';
-import 'package:stigma/features/authentication/screens/signup/signup_screen.dart';
 import 'package:stigma/features/authentication/screens/signup/verifyemail.dart';
-import 'package:stigma/navigation_menu.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();
@@ -19,6 +17,7 @@ class AuthenticationRepository extends GetxController {
   final deviceStorage = GetStorage();
   final _auth = FirebaseAuth.instance;
   final _db = FirebaseFirestore.instance;
+
   /// Get Authenticated User Data
   User? get authUser => _auth.currentUser;
   @override
@@ -28,16 +27,14 @@ class AuthenticationRepository extends GetxController {
     screenRedirect();
   }
 
-  void logIn(){
-    
-  }
+  void logIn() {}
 
   // Function to show Relevant screen
   void screenRedirect() async {
     final user = _auth.currentUser;
     if (user != null) {
       if (user.emailVerified) {
-        Get.offAll(() => NavigationMenu());
+        Get.offAll(() => SplashScreen());
       } else {
         Get.offAll(() => VerifyEmail(email: _auth.currentUser?.email));
       }
@@ -45,7 +42,7 @@ class AuthenticationRepository extends GetxController {
       deviceStorage.writeIfNull('isFirstTime', true);
       deviceStorage.read('isFirstTime') != true
           ? Get.offAll(() => LoginScreen())
-          : Get.offAll(() => SignUpScreen());
+          : Get.offAll(() => SplashScreen());
     }
   }
 
@@ -95,7 +92,6 @@ class AuthenticationRepository extends GetxController {
         email: email,
         password: password,
       );
-
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         Get.snackbar(
@@ -174,7 +170,7 @@ class AuthenticationRepository extends GetxController {
   Future<UserCredential> signinWithGoogle() async {
     try {
       //Triger the authentication flow
-final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
+      final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
       final GoogleSignInAuthentication? googleAuth =
           await userAccount?.authentication;
       //Create a new credential

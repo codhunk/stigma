@@ -8,6 +8,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "animated_notch_bottom_bar",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/animated_notch_bottom_bar-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "ansicolor",
       "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/ansicolor-2.0.3",
       "packageUri": "lib/",
@@ -27,7 +33,7 @@
     },
     {
       "name": "async",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.12.0",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.13.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -46,6 +52,18 @@
     {
       "name": "characters",
       "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/checked_yaml-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/cli_util-0.4.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -122,8 +140,20 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "dotted_line",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/dotted_line-3.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.2",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.3",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -212,16 +242,22 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "fl_chart",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/fl_chart-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///C:/flutter/src/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
     {
-      "name": "flutter_lints",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0",
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.14.4",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_native_splash",
@@ -416,8 +452,14 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "json_annotation",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-4.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "leak_tracker",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.8",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.9",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -432,12 +474,6 @@
       "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.2"
-    },
-    {
-      "name": "lints",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.6"
     },
     {
       "name": "logger",
@@ -566,6 +602,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "simple_gesture_detector",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/simple_gesture_detector-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/flutter/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -600,6 +642,12 @@
       "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1",
       "packageUri": "lib/",
       "languageVersion": "3.1"
+    },
+    {
+      "name": "table_calendar",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/table_calendar-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "term_glyph",
@@ -681,7 +729,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.1",
+      "rootUri": "file:///C:/Users/Alice/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-15.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -716,10 +764,9 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-07-24T07:38:59.194217Z",
   "generator": "pub",
-  "generatorVersion": "3.7.0",
+  "generatorVersion": "3.8.1",
   "flutterRoot": "file:///C:/flutter/src/flutter",
-  "flutterVersion": "3.29.0",
+  "flutterVersion": "3.32.8",
   "pubCache": "file:///C:/Users/Alice/AppData/Local/Pub/Cache"
 }

@@ -105,7 +105,9 @@ class TSignupForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => controller.signup(),
+                onPressed: () {
+                  // Handle sign up logic
+                },
                 child: const Text(
                   TText.signUp,
                   style: TextStyle(color: AppColors.buttonSecondary),

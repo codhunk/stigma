@@ -57,11 +57,11 @@ class LoginController extends GetxController {
       }
 
       //-------Login user using Email & Password Authentication----------
-      final userCredential = await AuthenticationRepository.instance
-          .loginWithEmailAndPassword(
-            studentID.text.trim(),
-            password.text.trim(),
-          );
+      // final userCredential = await AuthenticationRepository.instance
+      //     .loginWithEmailAndPassword(
+      //       studentID.text.trim(),
+      //       password.text.trim(),
+      //     );
 
       //-------Remove Loader----------
       TFullScreenLoader.stopLoading();

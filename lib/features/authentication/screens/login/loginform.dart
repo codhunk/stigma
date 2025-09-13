@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:stigma/common/Screens/Teacher/home.dart';
 import 'package:stigma/features/authentication/controller.onboarding/login_controller/login_controller.dart';
 import 'package:stigma/features/authentication/screens/password_configration/forgetpassword.dart';
 import 'package:stigma/utils/constants/colors.dart';
@@ -93,7 +94,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => controller.emailAndPasswordSignIn(),
+                onPressed: () => Get.to(() => TeacherHomeScreen()),
                 child: const Text(
                   TText.logIn,
                   style: TextStyle(color: AppColors.buttonSecondary),
